@@ -6,6 +6,7 @@
 
 <main>
 	<div>
+		<h1>Images of Life</h1>
 		<a
 			href="https://vitejs.dev"
 			target="_blank"
@@ -29,7 +30,6 @@
 			/>
 		</a>
 	</div>
-	<h1>Images of Life</h1>
 
 	<div class="card">
 		<Counter />
