@@ -1,65 +1,22 @@
 <script>
-	import svelteLogo from './assets/svelte.svg';
-	import viteLogo from '/vite.svg';
-	import Counter from './lib/Counter.svelte';
 </script>
 
 <main>
-	<div>
-		<h1>Images of Life</h1>
-		<a
-			href="https://vitejs.dev"
-			target="_blank"
-			rel="noreferrer"
-		>
-			<img
-				src={viteLogo}
-				class="logo"
-				alt="Vite Logo"
-			/>
-		</a>
-		<a
-			href="https://svelte.dev"
-			target="_blank"
-			rel="noreferrer"
-		>
-			<img
-				src={svelteLogo}
-				class="logo svelte"
-				alt="Svelte Logo"
-			/>
-		</a>
-	</div>
-
-	<div class="card">
-		<Counter />
-	</div>
-
-	<p>
-		Check out <a
-			href="https://github.com/sveltejs/kit#readme"
-			target="_blank"
-			rel="noreferrer">SvelteKit</a
-		>, the official Svelte app framework powered by Vite!
-	</p>
-
-	<p class="read-the-docs">Click on the Vite and Svelte logos to learn more</p>
+	<div class="HomePage">Images of Life</div>
 </main>
 
 <style>
-	.logo {
-		height: 6em;
-		padding: 1.5em;
-		will-change: filter;
-		transition: filter 300ms;
+	.HomePage {
+		width: 95vw;
+		background-color: antiquewhite;
+		display: grid;
+		grid-template-columns: 20vw repeat(8, 10vw) 20dvw;
+		grid-template-rows: 15rem repeat(6, 10rem) 15rem;
 	}
 	.logo:hover {
 		filter: drop-shadow(0 0 2em #646cffaa);
 	}
 	.logo.svelte:hover {
 		filter: drop-shadow(0 0 2em #ff3e00aa);
-	}
-	.read-the-docs {
-		color: #888;
 	}
 </style>
