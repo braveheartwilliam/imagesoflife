@@ -1,13 +1,32 @@
 <script>
+	import Breadcrumbs from './lib/Breadcrumbs.svelte';
+
+	const items = [
+		{ text: 'Home', href: '/' },
+		{ text: 'Projects', href: '/projects' },
+		{ text: 'Svelte Breadcrumb' },
+	];
 </script>
 
 <main>
 	<div class="HomePage">
 		Images of Life
 		<div class="grid_container">
-			<div class="home_header">home_header</div>
-
-			<div class="home_left_navigation">left_navigation</div>
+			<div class="home_header">home_header  <Breadcrumbs {items} /></div>
+			<Breadcrumbs {items} />
+			<div class="home_left_navigation">
+				left_navigation
+				<div class="home_nav">
+					What do you want to see?
+					<nav class="home_left_nav">
+						<li class="nav_list"><a href="src\Pages\places.svelte">Places</a></li>
+						<li class="nav_list">Trips</li>
+						<li class="nav_list">Pictures</li>
+						<li class="nav_list">People</li>
+						<li class="nav_list">Me</li>
+					</nav>
+				</div>
+			</div>
 			<div class="home_body">home_body</div>
 			<div class="home_right_navigation">right_navigation</div>
 			<div class="home_footer">home_footer</div>
@@ -33,6 +52,16 @@
 		grid-column: 1/1;
 		grid-row: 2/8;
 	}
+	.home_nav {
+		font-size: 25px;
+		color: red;
+		width: 8rem;
+		margin: auto;
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+	}
+
 	.home_right_navigation {
 		background-color: rgb(49, 108, 177);
 		font-size: 25px;
