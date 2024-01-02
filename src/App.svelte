@@ -16,7 +16,7 @@
 					What do you want to see?
 					<nav class="home_left_nav">
 						<li class="nav_list">
-							<a href="./Pages/test.svelte">Places</a>
+							<a href="./src/pages/Places.svelte">Places</a>
 						</li>
 						<li class="nav_list">Trips</li>
 						<li class="nav_list">Pictures</li>
