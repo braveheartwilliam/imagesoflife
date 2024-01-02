@@ -1,11 +1,7 @@
 <script>
 	import Breadcrumbs from './lib/Breadcrumbs.svelte';
 
-	const items = [
-		{ text: 'Home', href: '/' },
-		{ text: 'Projects', href: '/projects' },
-		{ text: 'Svelte Breadcrumb' },
-	];
+	const items = [{ text: 'Home', href: '/' }];
 </script>
 
 <main>
@@ -20,7 +16,7 @@
 					What do you want to see?
 					<nav class="home_left_nav">
 						<li class="nav_list">
-							<a href="src/Places.svelte">Places</a>
+							<a href="./Pages/test.svelte">Places</a>
 						</li>
 						<li class="nav_list">Trips</li>
 						<li class="nav_list">Pictures</li>
@@ -77,6 +73,7 @@
 		color: red;
 		grid-column: 1/11;
 		grid-row: 1/1;
+		color: black;
 	}
 	.home_body {
 		background-color: rgb(236, 208, 81);

@@ -16,11 +16,9 @@
 	<h1>This is where view by locations and places visited</h1>
 
 </div>
-
 <style>
-
 	.places_home {
 		color: blue;
 		font-size: large;
 	}
-	</style>
+</style>

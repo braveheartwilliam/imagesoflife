@@ -4,7 +4,7 @@
 
 <div style="font-size: large; color: blueviolet;">in breadcrumbs</div>
 <nav aria-label="breadcrumb">
-	<ol class="breadcrumb">
+	<ul class="breadcrumb">
 		{#each items as item, i}
 			<li class="breadcrumb-item">
 				{#if item.href}
@@ -14,15 +14,18 @@
 				{/if}
 			</li>
 			{#if i !== items.length - 1}
-				<li class="breadcrumb-item separator">/</li>
+				<li class="breadcrumb-item separator">..</li>
 			{/if}
 		{/each}
-	</ol>
+	</ul>
 </nav>
 
 <style>
+	.breadcrumb {
+		display: flex;
+	}
 	.breadcrumb-item {
-		color: greenyellow;
+		color: black;
 		font-size: medium;
 	}
 	breadcrumb-item separator {
