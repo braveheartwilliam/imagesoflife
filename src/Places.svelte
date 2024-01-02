@@ -1,5 +1,5 @@
 <script>
-	import Breadcrumbs from '../lib/Breadcrumbs.svelte';
+	import Breadcrumbs from './lib/Breadcrumbs.svelte';
 
 	const items = [
 		{ text: 'Home', href: '/' },
@@ -7,7 +7,7 @@
 		{ text: 'Svelte Breadcrumb' },
 	];
 
-	console.log('In Breadcrumbs');
+	// console.log('In Breadcrumbs');
 </script>
 
 <div class="places_home">

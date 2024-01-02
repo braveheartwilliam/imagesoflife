@@ -10,16 +10,18 @@
 
 <main>
 	<div class="HomePage">
-		Images of Life
+		Images of Life xxx
 		<div class="grid_container">
-			<div class="home_header">home_header  <Breadcrumbs {items} /></div>
+			<div class="home_header">home_header <Breadcrumbs {items} /></div>
 			<Breadcrumbs {items} />
 			<div class="home_left_navigation">
 				left_navigation
 				<div class="home_nav">
 					What do you want to see?
 					<nav class="home_left_nav">
-						<li class="nav_list"><a href="src\Pages\places.svelte">Places</a></li>
+						<li class="nav_list">
+							<a href="src/Places.svelte">Places</a>
+						</li>
 						<li class="nav_list">Trips</li>
 						<li class="nav_list">Pictures</li>
 						<li class="nav_list">People</li>
